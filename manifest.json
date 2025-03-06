@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Google Drive Extension",
+  "version": "1.0",
+  "description": "Basic Chrome Extension to interact with Google Drive",
+  "permissions": ["identity", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": ["https://www.googleapis.com/"],
+  "oauth2": {
+    "client_id": "784243906241-hajmb7srh60m1g1mqqmk419f56r6aql7.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/drive.readonly"]
+  }
+}
